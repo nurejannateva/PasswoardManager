@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,6 +46,71 @@
         </button>
  </a>
     </div>
+
+
+    
+
+    <script>
+        
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change PIN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-teal-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-2xl shadow-xl text-center w-80">
+
+    <h2 class="text-xl font-bold mb-6">Change PIN</h2>
+
+    <input id="old" type="password" placeholder="Old PIN"
+        class="w-full p-3 border rounded-xl mb-3 text-center">
+
+    <input id="new" type="password" placeholder="New PIN"
+        class="w-full p-3 border rounded-xl mb-3 text-center">
+
+    <input id="confirm" type="password" placeholder="Confirm PIN"
+        class="w-full p-3 border rounded-xl mb-4 text-center">
+
+    <button onclick="changePin()"
+        class="w-full bg-teal-600 text-white py-3 rounded-xl">
+        Save
+    </button>
+
+</div>
+
+<script>
+function changePin() {
+    let oldPass = document.getElementById("old").value;
+    let newPass = document.getElementById("new").value;
+    let confirmPass = document.getElementById("confirm").value;
+
+    let saved = localStorage.getItem("pin") || "1234";
+
+    if (oldPass != saved) {
+        alert("Wrong old PIN");
+        return;
+    }
+
+    if (newPass != confirmPass) {
+        alert("PIN not match");
+        return;
+    }
+
+    localStorage.setItem("pin", newPass);
+
+    alert("PIN changed!");
+    window.location.href = "page1.html";
+}
+</script>
 
 </body>
 </html>
