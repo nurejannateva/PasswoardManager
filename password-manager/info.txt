@@ -1,0 +1,5 @@
+cd /e/password-manager
+
+gcc -Wall -Wextra -g -Iinclude src/*.c -o build/password_manager $(pkg-config --cflags --libs gtk4 libadwaita-1)
+
+./build/password_manager

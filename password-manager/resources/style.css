@@ -1,0 +1,165 @@
+window {
+    background: #0f172a;
+}
+
+label,
+entry,
+button {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card {
+    background: #131e36;
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.credential-list {
+    background: transparent;
+    padding: 8px;
+}
+
+.credential-list row,
+.credential-row {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.credential-row {
+    border-bottom: 1px solid rgba(203, 213, 225, 0.16);
+}
+
+.credential-row:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.muted {
+    color: #cbd5e1;
+}
+
+.platform-label {
+    font-weight: 700;
+}
+
+entry {
+    min-height: 36px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.custom-toast {
+    background: #dc2626;
+    min-width: 220px;
+    min-height: 22px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    min-height: 30px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+button.small-action {
+    min-width: 88px;
+    min-height: 32px;
+    padding: 5px 9px;
+}
+
+button.secondary-button {
+    background: rgba(148, 163, 184, 0.16);
+    color: #f8fafc;
+    min-height: 38px;
+}
+
+button.secondary-button:hover {
+    background: rgba(148, 163, 184, 0.24);
+}
+
+button.danger-button {
+    background: #dc2626;
+    color: white;
+    font-weight: 700;
+    min-height: 38px;
+}
+
+button.danger-button:hover {
+    background: #b91c1c;
+}
+
+.modal-dialog {
+    background: #131e36;
+    border: 1px solid rgba(203, 213, 225, 0.12);
+    border-radius: 2px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+}
+
+.copy-dialog-icon {
+    color: #bfdbfe;
+    background: rgba(59, 130, 246, 0.16);
+    padding: 12px;
+    border-radius: 999px;
+}
+
+.copy-dialog-title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.copy-dialog-target {
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.copy-dialog-actions button {
+    min-height: 40px;
+}
+
+.delete-dialog-icon {
+    color: #fecaca;
+    background: rgba(220, 38, 38, 0.16);
+    padding: 12px;
+    border-radius: 999px;
+}
+
+.delete-dialog-title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.delete-dialog-target {
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.delete-dialog-body {
+    color: #cbd5e1;
+}
+
+.delete-dialog-actions {
+    margin-top: 12px;
+    border-spacing: 24px;
+}
+
+.delete-dialog-actions button {
+    margin: 6px;
+    min-height: 40px;
+}
+
+label {
+    color: white;
+}
